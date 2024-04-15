@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Weather Dashboard</title>
+</head>
+<body class=" row min-100-vh">
+        <header class="main-header">
+            <h1 class="weather">Weather Dashboard</h1>
+        </header>
+     <main>
+      <section class="flex-row justify-space-between" style="display: inline-table;">
+        <header class="search">Search for a City:</header>
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Input City..." title="Type in a category">
+          <button class="searchbutton">Search</button>
+            <div class="line"></div>
+            <ul id="myMenu">
+            <li class="list"><a href="#">Atlanta</a></li>
+            <li class="list"><a href="#">Denver</a></li>
+            <li class="list"><a href="#">Seattle</a></li>
+            <li class="list"><a href="#">San Francisco</a></li>
+            <li class="list"><a href="#">Orlando</a></li>
+            <li class="list"><a href="#">New York</a></li>
+            <li class="list"><a href="#">Chicago</a></li>
+            <li class="list"><a href="#">Austin</a></li>
+            <li class="list"><a href="#">Nashville</a></li>
+            </ul>
+      </section>
+      <div>
+            <section class="topbox">
+                <ul class="list-group">
+                    <li class="list-group-a">An item</li>
+                    <li class="list-group-b">A second item</li>
+                    <li class="list-group-b">A third item</li>
+                    <li class="list-group-b">A fourth item</li>
+                    <li class="list-group-b">And a fifth one</li>
+                </ul>
+            </section>
+            <header class="day">
+                <h1 class="forecast">5-Day Forecast</h1>
+              </header>
+         <aside class="bottombox">
+                <div class="card mb-3" style="width: 10rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                
+                <div class="card text-center mb-3" style="width: 10rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                
+                <div class="card text-end" style="width: 10rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 10rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                
+                <div class="card text-center mb-3" style="width: 10rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+         </aside>
+      </div>
+     </main>
+    <script src="./assets/js/script.js"></script>  
+</body>
+</html>
