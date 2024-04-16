@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <title>Weather Dashboard</title>
 </head>
 <body class=" row min-100-vh">
@@ -13,35 +16,23 @@
      <main>
       <section class="flex-row justify-space-between" style="display: inline-table;">
         <header class="search">Search for a City:</header>
-          <input type="text" class="input-box" id="mySearch" onkeyup="myFunction()" placeholder="Input City..." title="Type in a category">
-          <button class="searchbutton">Search</button>
+          <input type="text" class="input-box" id="mySearch" placeholder="Input City..." title="Type in a category">
+          <button id="searchButton" id="Weatherbutton">Search</button>
             <div class="line"></div>
             <ul id="myMenu" class="citys">
-            <li class="list"><a href="#">Atlanta</a></li>
-            <li class="list"><a href="#">Denver</a></li>
-            <li class="list"><a href="#">Seattle</a></li>
-            <li class="list"><a href="#">San Francisco</a></li>
-            <li class="list"><a href="#">Orlando</a></li>
-            <li class="list"><a href="#">New York</a></li>
-            <li class="list"><a href="#">Chicago</a></li>
-            <li class="list"><a href="#">Austin</a></li>
-            <li class="list"><a href="#">Nashville</a></li>
+            <li class="list"><a id="IdName"></a></li>
             </ul>
       </section>
       <div>
             <section class="topbox">
-                <ul class="list-group">
-                    <li class="list-group-a">An item</li>
-                    <li class="list-group-b">A second item</li>
-                    <li class="list-group-b">A third item</li>
-                    <li class="list-group-b">A fourth item</li>
-                    <li class="list-group-b">And a fifth one</li>
-                </ul>
+                <div id="currentWeatherConditions">
+                    <p>Weather Info</p>
+                </div>
             </section>
             <header class="day">
                 <h1 class="forecast">5-Day Forecast</h1>
               </header>
-         <aside class="bottombox">
+         <aside id="forecastInfo" class="bottombox">
                 <div class="card mb-3" class="card" style="width: 10rem;">
                     <div class="card-body">
                     <h5 class="card-title">Special title treatment</h5>
@@ -79,6 +70,10 @@
          </aside>
       </div>
      </main>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>  
 </body>
 </html>
