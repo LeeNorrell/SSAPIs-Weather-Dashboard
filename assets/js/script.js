@@ -150,7 +150,7 @@ function getWeatherCityValue() {
 }
 
 $(document).ready(function() {
-  searchField.val('Atlanta');
+  searchField.val('');
   $('#searchButton').click(async function() {
     const cityInfo = await getLocationFromCityName(searchField.val());
 
